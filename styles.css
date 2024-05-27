@@ -1,0 +1,109 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    font-size: 60px;
+}
+
+table{
+    font-size: 20px;
+    margin: auto;
+    width: 69%;
+    border: 2px solid black;
+}
+
+th, td {
+    text-align: center;
+    font-size: 22px;
+    border: 1px solid black;
+    color: white;
+    padding: 10px; /* Agregar padding dará más espacio dentro de las celdas */
+}
+
+input, select {
+    font-size: 20px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+
+input[type="submit"] {
+    background-color: purple;
+    color:white;
+    border: none;
+    padding: 5px 3px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 2px 2px;
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+}
+
+.container {
+    display:flex;
+    justify-content: center;/* es para alinear Horizontalmente */
+    align-items: center; /* es para alinear verticalmente */
+}
+
+/* Estilos para Tabla Resultados.php */
+
+.table {                   /* Estilo para la Tabla  */
+    width: 100%;
+    border-collapse: separate; /* Cambia el espacio a 'separate' para que los bordes sean mas visibles */
+    border-spacing: 0;        /* Elimina el espacio entre los bordes */
+}
+
+.table th {                 /* Estilo para las celdas de encabezado */
+    background-color: #0c5d6b;
+    color: #ffff; /* Cambia e lcolor a un blamco para mejor contrasrte */
+    padding: 10px;
+    text-align: left;
+}
+
+.table td {             /* Estilo para las celdas del cuerpo de la tabla  */
+    padding: 10px;
+    border: 1px solid #b0c4de; /* Cambia el color del borde a un tono de azul claro  */
+    background-color: #00131a; /* Añadiendo el color de fondo a las celdas del cuerpo de la tabla  */
+}
+
+.table tbody tr:hover {       /* Estilo para las filas del cuerpo de la tabla cuando el mouse pase sobre ellas */
+    background-color: #f8f9fa;
+}
+
+/* Estilos para la tabla resultados completos */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f8f8f8;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}

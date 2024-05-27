@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Formulario ITAIPUE Inventario PC</title>
+        <link rel="shortcut icon" href="logo.png"/>
+    </head>
+        <body>
+            <h1>Formulario Inventario de PC ITAIPUE</h1>
+            <form method="POST" action="enviodatos.php">
+            <table class="table table-hover">  
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Campo</th>
+                    <th scope="col">Respuesta</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td><label for="pro">Procesador</label></td>
+                    <td><input type="text" name="pro" min="1" required></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">2</th>
+                    <td><label for="moni">Monitores</label></td>
+                    <td><input type="Number"  name="moni" min="1" max="2" required></td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">3</th>
+                    <td><label for="model">Modelo:</label></td>
+                    <td><input type="text"  name="model" required></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">4</th>
+                    <td><label for="marca">Marca:</label></td>
+                    <td><input type="text"  name="marca" required></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">5</th>
+                    <td><label for="num_serie">Numero de Serie</label></td>
+                    <td><input type="text"  name="num_serie" required></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">6</th>
+                    <td><label for="service_Tag">Service Tag</label></td>
+                    <td><input type="text"  name="service_Tag" required></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">7</th>
+                    <td><label for="tipo_Alm">Tipo de Almacenamiento:</label></td>
+                    <td>
+                        <select class="form-select" aria-label="Default select example" name="tipo_Alm" required>
+                            <option selected>De Click aqui</option>
+                            <option value="SSD">SSD</option>
+                            <option value="M.2">M.2</option>
+                            <option value="HDD">HDD</option>
+                        </select>
+                     </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">8</th>
+                    <td><label for="canAlm">Cantidad de Almacenamiento:</label></td>
+                    <td>
+                        <select class="form-select" aria-label="Default select example"   name="canAlm" required>
+                            <option selected>Da Click Aqui</option>
+                            <option value="8">8GB</option>
+                            <option value="16">16GB</option>
+                            <option value="32">32GB</option>
+                            <option value="64">64GB</option>
+                            <option value="128">128GB</option>
+                            <option value="256">256GB</option>
+                            <option value="512">512GB</option>
+                            <option value="1024">1TB</option>
+                        </select>
+                    </td>
+                    </td>
+                </tr>
+                 
+                <tr>
+                    <th scope="row">9</th>
+                    <td><label for="tipo_ram">Tipo de RAM:</label></td>
+                    <td>
+                        <select class="form-select" aria-label="Default select example"  name="tipo_ram" required>
+                            <option selected>Da Click Aqui</option>
+                            <option value="DDR">DDR</option>
+                            <option value="DRR2">DRR2</option>
+                            <option value="DRR3">DRR3</option>
+                            <option value="DRR4">DRR4</option>
+                            <option value="DRR5">DRR5</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th scope="row">10</th>
+                    <td><label for="fuent_poder">Fuente de Poder:</label></td>
+                    <td><input type="text" id="fuent_poder" name="fuent_poder" required></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">20</th>
+                    <td><label for="num_serie_teclado">Numero de Serie del Teclado</label></td>
+                    <td><input type="text"  name="num_serie_teclado" required></td>
+                </tr>
+                
+                <tr>
+                    <th scope="row">21</th>
+                    <td><label for="marc_teclado">Marca del Teclado:</label></td>
+                    <td><input type="text" name="marc_teclado" required></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">22</th>
+                    <td><label for="num_serie_mouse">Numero de serie del Mouse:</label></td>
+                    <td><input type="text" name="num_serie_mouse" required></td>
+                </tr>
+
+                <tr>
+                    <th scope="row">23</th>
+                    <td><label for="marc_mouse">Marca del Mouse:</label></td>
+                    <td><input type="text"  name="marc_mouse" required></td>
+                </tr>
+            </tbody>
+            </table>
+            <br><br>
+            <div class="container">
+                <input type="submit" value="Enviar a la base de datos">  
+            </div>
+            
+        </body>
+    </html>
